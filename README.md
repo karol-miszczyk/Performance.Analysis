@@ -1,2 +1,2 @@
 # Performance.Analysis
-Project to benchmark and share its result
+Project to benchmark C# and share its result
