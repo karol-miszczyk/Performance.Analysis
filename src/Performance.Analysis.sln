@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance.Cases", "Performance.Cases\Performance.Cases.csproj", "{C2A3BF36-8F69-4720-B78F-737E8133B3FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Cases", "Performance.Cases\Performance.Cases.csproj", "{C2A3BF36-8F69-4720-B78F-737E8133B3FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance.Cases.Runner", "Performance.Cases.Runner\Performance.Cases.Runner.csproj", "{CE74C685-DE06-4D75-830D-5901A36B0F50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Cases.Runner", "Performance.Cases.Runner\Performance.Cases.Runner.csproj", "{CE74C685-DE06-4D75-830D-5901A36B0F50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
