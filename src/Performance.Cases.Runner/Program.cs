@@ -1,7 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
-using Performance.Cases.Collections.Dictionary;
-using Performance.Cases.Collections.List;
 using Performance.Cases.String.Substring;
+using Performance.Cases.XMLParsing;
 
 namespace Performance.Cases.Runner
 {
@@ -9,10 +8,16 @@ namespace Performance.Cases.Runner
     {
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<ListIteratingComparison>();
-            summary = BenchmarkRunner.Run<DictionaryIteratingComparison>();
-            summary = BenchmarkRunner.Run<RegularSubstring>();
-            summary = BenchmarkRunner.Run<Slice>();
+            //var summary = BenchmarkRunner.Run<CycleDetectorsBenchmark>();
+            //var summary = BenchmarkRunner.Run<XmlLoad>();
+
+            
+            //var summary = BenchmarkRunner.Run<ListIteratingComparison>();
+
+            //summary = BenchmarkRunner.Run<DictionaryIteratingComparison>();
+            var summary = BenchmarkRunner.Run<RegularSubstring>();
+            //summary = BenchmarkRunner.Run<Slice>();
+            //summary = BenchmarkRunner.Run<XmlLoad>();
         }
     }
 }

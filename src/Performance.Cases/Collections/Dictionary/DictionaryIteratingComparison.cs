@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Performance.Cases.Collections.Dictionary
 {
-    [CoreJob, ClrJob]
+    [CoreJob, ClrJob, MemoryDiagnoser]
     public class DictionaryIteratingComparison
     {
         private readonly Dictionary<int, string> dictionary;
@@ -63,6 +63,15 @@ namespace Performance.Cases.Collections.Dictionary
                 var temporaryValue = dictionaryEnumerator.Current.Value;
             }
             while (dictionaryEnumerator.MoveNext());
+        }
+
+        [Benchmark]
+        public void DictionaryIterateOverKeys()
+        {
+            for(int i = 0; i < CommonConsts.DEFAULT_SIZE; i++)
+            {
+                var value = this.dictionary[i];
+            }
         }
     }
 }

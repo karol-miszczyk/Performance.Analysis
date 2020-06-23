@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Performance.Cases.Collections.List
 {
-    [CoreJob, ClrJob]
+    [CoreJob, ClrJob, MemoryDiagnoser]
     public class ListIteratingComparison
     {
         private readonly List<string> list;
